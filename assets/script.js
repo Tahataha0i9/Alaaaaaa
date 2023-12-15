@@ -41,7 +41,7 @@ const doaListPage = () => {
 
     let i = 1;
     doa.forEach((d) => {
-        const html = `<li id="${i}" class="doa list-group-item ${warna[d.warna-1]} mt-3">Do'a ${d.nama} </li>`;
+        const html = `<li id="${i}" class="doa list-group-item ${warna[d.warna-1]} mt-3">دُعاء ${d.nama} </li>`;
         $('#list-doa').append(html);
         i++;
     })
@@ -62,10 +62,10 @@ const doaPage = () => {
 
     d = doa[id - 1];
 
-    $('.judul').text(`Do'a ${d.nama}`);
+    $('.judul').text(`٠${d.nama}`);
     $('.teks-arab').text(d.arab);
-    $('.teks-latin').text(d.latin);
-    $('.teks-indo').text(d.indo);
+    
+    
 };
 
 const quranPage = () => {
@@ -128,8 +128,8 @@ const surahPage = () => {
         for (let i = 0; i < data[0].numberOfAyahs; i++) {
             const obj = {
                 arab: '',
-                latin: '',
-                indo: '',
+                
+                
                 audio: ''
 
             };
@@ -147,20 +147,8 @@ const surahPage = () => {
             surah[i].arab = ayah.text;
 
             i++;
-        });
+      
 
-        i = 0;
-        data[1].ayahs.forEach((ayah) => {
-            surah[i].latin = ayah.text;
-
-            i++;
-        });
-
-        i = 0;
-        data[2].ayahs.forEach((ayah) => {
-            surah[i].indo = ayah.text;
-
-            i++;
         });
 
         tampilkanData();
