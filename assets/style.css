@@ -1,0 +1,786 @@
+@font-face {
+    font-family: "mequran";
+    src: url('./me_quran.ttf');
+    font-weight: bold;
+}
+
+.bg-info{
+    padding: 1ch;
+    margin: 0;
+}
+
+
+
+.bg-home-screen {
+    background-image: url("image/greek-vase.png");
+}
+
+.full-screen {
+    font-size: 2em;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.menu {
+  text-align: center;
+  margin-top: 180px;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background: #fff
+}
+.middle{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.btn{
+  background: none;
+  border: 2px solid #000;
+  font-family: "montserrat",sans-serif;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  min-width: 200px;
+  margin: 10px;
+  cursor: pointer;
+  transition: color 0.4s linear;
+  position: relative;
+}
+.btn:hover{
+  color: #fff;
+}
+.btn::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+.btn1::before{
+  transform: scaleX(0);
+}
+.btn2::before{
+  transform: scaleY(0);
+}
+.btn1:hover::before{
+  transform: scaleX(1);
+}
+.btn2:hover::before{
+  transform: scaleY(1);
+}
+
+.btn3::before{
+    transform: scaleX(0);
+}
+.btn3:hover::before{
+    transform: scaleX(1);
+}
+
+.programmer1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .sm-container{
+    text-align: center;
+  }
+  
+  .sm-container i{
+    color: #f5f6fa;
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  
+  .sm-container i:hover{
+    transform: scale(1.2);
+  }
+  
+  .sm-menu{
+    background: #487eb0;
+    position: absolute;
+    border-radius: 8px;
+    display: none;
+  }
+  
+  .sm-menu::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #487eb0;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+  
+
+.item-menu {
+    margin: 5px;
+}
+
+  
+body1{
+    margin: 0;
+    padding: 0;
+    height: 30vh;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-media-container h2{
+    color: #2e3749;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.border{
+    width: 120px;
+    height: 3px;
+    position: relative;
+}
+
+.border::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 40px;
+    background-color: #2e3749;
+    transition: .3s linear;
+}
+
+.social-media-container:hover .border::before{
+    width: 100%;
+}
+
+.social-media-buttons a{
+    display: inline-block;
+    color: #2e3749;
+    font-size: 24px;
+    margin-right: 20px;
+    pointer-events: none;
+    transition: .5s;
+    opacity: 0;
+}
+
+.social-media-buttons a:nth-child(odd){
+    transform: translateY(-40px);
+}
+
+.social-media-buttons a:nth-child(even){
+    transform: translateY(40px);
+}
+
+.social-media-container:hover .social-media-buttons a{
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.social-media-buttons a i{
+    transition: .2s linear;
+}
+
+.fa-facebook-f:hover{
+    color: #1b74e4;
+}
+
+.fa-twitter:hover{
+    color: #1da1f2;
+}
+
+.fa-instagram:hover{
+    color: #c32aa3;
+}
+
+.fa-linkedin-in:hover{
+    color: #0a66c2;
+}
+
+.fa-tiktok:hover{
+    color: #010101;
+}
+
+.list-doa{
+
+background: #0a66c2;
+
+}
+
+
+
+
+.header-quran .judul {
+    margin-top: 0.3em;
+    height: 100%;
+    margin-left: 2em;
+    flex-basis: 50%;
+    font-weight: bold;
+    color: black;
+    font-size: 1.5em;
+    font-family: 'Gulzar', serif;
+}
+
+.header-quran .ikon {
+    text-align: right;
+    flex-basis: 50%;
+    margin-left: 2em;
+}
+
+.header-quran i {
+    margin-top: 0.8em;
+    margin-right: 1em;
+}
+
+.no_s {
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    margin-top: 0;
+    border: 2px solid #74b9ff;
+    top: 0;
+    text-align: center;
+    line-height: 2.3em;
+}
+
+.table-success{
+
+background: #2d3436
+
+}
+
+.td5 {
+    padding: 0;
+color: #74b9ff
+}
+
+.td3 {
+    line-height: 3.5em;
+    font-family: 'Gulzar', serif;
+    font-size: 1.5em;
+}
+
+
+.tebal {
+  background: #2d3436;
+    font-weight: 450;
+color: #74b9ff
+
+}
+
+.td3.text-right{
+  color: #74b9ff;
+
+
+}
+
+
+.td1{
+display: none;
+  
+}
+
+.td2 {
+  line-height: 3.5em;
+  font-family: 'Gulzar', serif;
+  font-size: 1.5em;
+  display: none;
+}
+
+.td2.text-right{
+  color: #74b9ff;
+display: none;
+
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+*{
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+body10{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 1vh;
+}
+
+.mento{
+  font-family: "Raleway", Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.mento li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 2.2em;
+  overflow: hidden;
+}
+
+.mento a{
+  padding: 0 0.2em 0 0.5em;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: 1px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.mento a::before,
+.mento a::after{
+  position: absolute;
+  transition: all 0.35s ease;
+}
+
+.mento a::before{
+  left: 100%;
+  display: block;
+  width: 3px;
+  height: 100%;
+  content: "";
+  background-color: #2d3436;
+}
+
+.mento a::after{
+  padding: 0 0.2em 0 0.5em;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  content: attr(data-hover);
+  color: white;
+  white-space: nowrap;
+}
+
+.mento li:hover a,
+.mento .current a{
+  transform: translateX(-100%);
+}
+
+.bgero{
+background:#2d3436 ;
+
+
+}
+
+/* surah.html */
+.list-item {
+    display: flex;
+    border-bottom: 0.02em solid #6C757D;
+    background: #2d3436;
+  }
+
+
+.list-item:last-child {
+    border-bottom: none;
+}
+
+.item-icon {
+    flex-basis: 13%;
+    text-align: center;
+}
+
+.item-icon .no-ayat,
+.item-icon i {
+    margin-top: 1.4em;
+background: #2d3436; 
+}
+
+
+
+.item-teks {
+    flex-basis: 75%;
+}
+
+
+ .text-success{
+
+border-bottom: #74b9ff;;
+ }
+
+
+.teks-arab {
+    font-family: 'mequran';
+    text-align: center;
+    margin-top: 1.2em;
+    font-size: 1.7em;
+    line-height: 2em;
+    margin-bottom: 1em;
+    color: #fff;
+  }
+
+.no-ayat {
+  border: 2px solid  #fff;
+    width: 2em;
+    text-align: center;
+    color:#74b9ff; ;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 0.5em;
+}
+
+.list-group.mt-5{
+background: #2d3436; 
+text-align: center;
+font-size: 1em;
+font-family: 'Gulzar', serif;
+}
+
+
+
+
+
+.vicoo{
+
+background:#2d3436; 
+padding: 100;
+
+}
+
+.d-flex{
+background: #2d3436;
+color: white;
+}
+
+
+.texter{
+  color: #fff;
+  background: #2d3436;;
+ text-align: center;
+margin-left: 10em;
+}
+
+.bgme{
+
+  background: #2d3436;;
+}
+
+
+
+
+/* Jadwal Shalat */
+
+
+.card-body .kata {
+    display: inline;
+    flex-basis: 80%;
+}
+
+.card-body .jam {
+    display: inline;
+    flex-basis: 20%;
+}
+
+.card-body .kata,
+.card-body .jam {
+    font-size: 1.2em;
+}
+
+.card {
+    height: 4em;
+}
+
+
+/* About */
+
+body2{
+  margin: 0;
+  padding: 0;
+  background-color: #2f3542;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.animated-text{
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 280px;
+  position: absolute;
+}
+
+
+.animated-text span{
+  position: relative;
+}
+
+.animated-text span::before{
+  content: "";
+  color: #ff7f50;
+  animation: words 20s infinite;
+}
+
+.animated-text span::after{
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: #2f3542;
+  border-left: 2px solid #ff7f50;
+  right: -8px;
+  animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+  to{
+      border-left: 2px solid #ff7f5000;
+  }
+}
+
+@keyframes words {
+  0%,20%{
+      content: "PROGRAMMER";
+  }
+  21%,40%{
+      content: "DEVOLEPR";
+  }
+  41%,60%{
+      content: "DESIGNER";
+  }
+  61%,80%{
+      content: "COLLECTOR";
+  }
+  81%,100%{
+      content: "PDD Team";
+    }
+
+}
+
+@keyframes typing {
+  10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+      width: 0;
+  }
+  5%,20%,25%,40%,45%,60%,65%,80%,85%{
+      width: calc(100% + 8px);
+  }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "montserrat";
+} 
+
+body5{
+  background: #333;
+}
+.roll{
+  position: absolute;
+  top: 63%;
+  left: 19%;
+  transform: translate(-50%,-50%);
+  flex-basis: 7%;
+}
+.card{
+  cursor: pointer;
+  width: 340px;
+  height: 480px;
+}
+.front,.back{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform .6s linear;
+}
+.front img{
+  height: 100%;
+  width: 104%;
+}
+.front{
+  transform: perspective(600px) rotateY(0deg);
+}
+.back{
+  background: #f1f1f1;
+  transform: perspective(600px) rotateY(180deg);
+}
+.back-content{
+  color: #2c3e50;
+  text-align: center;
+  width: 100%;
+}
+.sm{
+  margin: 20px 0;
+}
+.sm a{
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  color: #2c3e50;
+  font-size: 18px;
+  transition: 0.4s;
+  border-radius: 50%
+}
+.sm a:hover{
+  background: #2c3e50;
+  color: white;
+}
+.card:hover > .front{
+  transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover > .back{
+  transform: perspective(600px) rotateY(0deg);
+}
+
+
+body6{
+  background: #333;
+}
+.relll{
+  position: absolute;
+  top: 63%;
+  left: 75%;
+  transform: translate(-50%,-50%);
+}
+.card{
+  cursor: pointer;
+  width: 340px;
+  height: 480px;
+}
+.front,.back{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform .6s linear;
+}
+.front img{
+  height: 101%;
+  width: 100%;
+}
+.front{
+  transform: perspective(600px) rotateY(0deg);
+}
+.back{
+  background: #f1f1f1;
+  transform: perspective(600px) rotateY(180deg);
+}
+.back-content{
+  color: #2c3e50;
+  text-align: center;
+  width: 100%;
+}
+.sm{
+  margin: 20px 0;
+}
+.sm a{
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  color: #2c3e50;
+  font-size: 18px;
+  transition: 0.4s;
+  border-radius: 50%
+}
+.sm a:hover{
+  background: #2c3e50;
+  color: white;
+}
+.card:hover > .front{
+  transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover > .back{
+  transform: perspective(600px) rotateY(0deg);
+}
+
+
+body8{
+  background: #333;
+}
+.rellll{
+  position: absolute;
+  top: 63%;
+  left: 47%;
+  transform: translate(-50%,-50%);
+}
+.card{
+  cursor: pointer;
+  width: 340px;
+  height: 480px;
+}
+.front,.back{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform .6s linear;
+}
+.front img{
+  height: 100%;
+  width: 104%;
+}
+.front{
+  transform: perspective(600px) rotateY(0deg);
+}
+.back{
+  background: #f1f1f1;
+  transform: perspective(600px) rotateY(180deg);
+}
+.back-content{
+  color: #2c3e50;
+  text-align: center;
+  width: 100%;
+}
+.sm{
+  margin: 20px 0;
+}
+.sm a{
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  color: #2c3e50;
+  font-size: 18px;
+  transition: 0.4s;
+  border-radius: 50%
+}
+.sm a:hover{
+  background: #2c3e50;
+  color: white;
+}
+.card:hover > .front{
+  transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover > .back{
+  transform: perspective(600px) rotateY(0deg);
+}
