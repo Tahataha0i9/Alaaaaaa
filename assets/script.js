@@ -1,4 +1,3 @@
-
 const indexPage = () => {
     $('#quran').click(() => {
         document.location.href = 'quran.html';
